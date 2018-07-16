@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Overview</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{% url 'main' %}">
+<link rel="stylesheet" href="{% url 'font' %}">
+<link rel="stylesheet" href="{% url 'second' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	</style>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-black w3-large" style="z-index: -1">
+  <span class="w3-bar-item w3-right">Dr. Tech</span>
+
+</div>
+<!-- Sidebar/menu -->
+  <div class="w3-container w3-row" style="z-index:4">
+    <div class="w3-col s4">
+    <img src="http:127.0.0.1/angel/profilepic.jpg" class="w3-round" alt="profilepic" style="width:55px">
+    </div>
+       <div class="w3-col s8 w3-bar">
+   	<p>Hi, <strong>Angel-Nepal</strong>, this is your medical report till today. </p>
+   	</div>
+  </div>
+ <br>
+<div class="w3-container w3-border w3-row" >
+        <h5>Feeds</h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+            <td>New record.</td>
+            <td><i>22/10/2017</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+            <td> Next Medicine</td>
+            <td><i>30 mins remaining</i></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
+            <td>Last Appointment</td>
+            <td><i>1 month ago</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
+            <td>Doctor's Message</td>
+            <td><i> Morning Walk 5 days a week. </i></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
+            <td>Next Appointment</td>
+            <td><i>17 days remaining</i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="w3-container w3-border w3-row" >
+        <h5>Health Condition</h5>
+         <div class="w3-container">
+
+    <p>Blood Pressure</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-orange" style="width:25%">Low</div>
+    </div>
+
+    <p>Thyroid</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-green" style="width:50%">Normal</div>
+    </div>
+
+    <p>Sugar</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-red" style="width:75%">High</div>
+    </div>
+  </div><br>
+    <a href="{% url 'demo' %}"><button class="w3-button w3-dark-grey"> <i class="fa fa-arrow-left"></i> Done </button></a>
+
+   </div>
+</body>
+</html>

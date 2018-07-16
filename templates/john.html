@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Doctor's report </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{% url 'main' %}">
+<link rel="stylesheet" href="{% url 'font' %}">
+<link rel="stylesheet" href="{% url 'second' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	</style>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-black w3-large" style="z-index: -1">
+  <span class="w3-bar-item w3-right">Dr. Tech</span>
+</div>
+
+<div class="w3-container">
+       <div class="w3-container">
+        <h5>Dr. John </h5>
+        <p>The patient has nausea, vomiting, fever. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. I suspect, she suffers from something.</p>
+
+        <h5> Medicine Schedule </h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <th> Medicine </th>
+            <th>Timing</th>
+            <th>Duration</th>
+          </tr>
+           <tr>
+            <td> Medicine no0</td>
+            <td><i>Before going to bed.</i></td>
+            <td> 1 months</td>
+          </tr>
+          <tr>
+            <td> Medicine no1</td>
+            <td><i> After meal. 2 times/i></td>
+            <td> 2 weeks </td>
+          </tr>
+</table>
+ </div>
+ </div>
+
+<br>
+<a href="{% url 'history' %}"><button class="w3-button w3-dark-grey"> <i class="fa fa-arrow-left"></i> Done </button></a>
+
+
+ </body>
+ </html>

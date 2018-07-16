@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>Dr.Tech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% url 'main' %}">
+<link rel="stylesheet" href="{% url 'font' %}">
+<link rel="stylesheet" href="{% url 'second' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large">
+ <a href="login.html"><img src="http:127.0.0.1/angel/lock.jpg" class="w3-round" alt="Norway" style="width:40px; color: white">  </a>
+  <span class="w3-bar-item w3-right">Dr. Tech</span>
+</div>
+
+<!-- Sidebar/menu -->
+<br><br> <br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+    <img src="http:127.0.0.1/angel/profilepic.jpg" class="w3-round" alt="Norway" style="width:55px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Angel-Nepal</strong></span><br>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+
+    <a href="{% url 'overview' %}" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  Overview</a>
+    <a href="{% url 'medicine' %}" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Medicines</a>
+    <a href="{% url 'appointment' %}" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Appointments</a>
+    <a href="{% url 'history' %}" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+    <a href="{% url 'emergency' %}" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Emergency Call</a><br><br>
+  </div>
+
+
+
+</body>
+</html>

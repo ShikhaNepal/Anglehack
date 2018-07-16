@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Appointment </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% url 'main' %}">
+<link rel="stylesheet" href="{% url 'font' %}">
+<link rel="stylesheet" href="{% url 'second' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	</style>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-black w3-large" style="z-index: -1">
+  <span class="w3-bar-item w3-right">Dr. Tech</span>
+
+</div>
+<!-- Sidebar/menu -->
+  <div class="w3-container w3-row" style="z-index:4">
+    <div class="w3-col s4">
+    <img src="http:127.0.0.1/angel/profilepic.jpg" class="w3-round" alt="profilepic" style="width:55px">
+    </div>
+       <div class="w3-col s8 w3-bar">
+   	<p>Hi, <strong>Angel-Nepal</strong>, this is your Doctor Schedule of this month. </p>
+   	</div>
+  </div>
+ <br>
+ <div class="w3-container w3-border w3-row" >
+        <h5> Doctor Schedule </h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <th> Doctors </th>
+            <th>Time Remaining</th>
+            <th>Checkmark</th>
+          </tr>
+           <tr>
+            <td> Dr. Bhusan Dahal</td>
+            <td><i>10 days ago</i></td>
+            <td><i class="fa fa-check w3-text-green w3-large"></i></td>
+          </tr>
+          <tr>
+            <td> Physio-therapy1 </td>
+            <td><i>5 days ago</i></td>
+            <td><i class="fa fa-close w3-text-red w3-large"></i></td>
+          </tr>
+
+          <tr>
+
+            <td>  Physio-therapy2 </td>
+            <td><i> 2 days ago</i></td>
+            <td><i class="fa fa-close w3-text-red w3-large"></i></td>
+          </tr>
+          <tr>
+
+            <td> Physio-therapy3 </td>
+            <td><i> today </i></td>
+            <td><i class="fa fa-check w3-text-green w3-large"></i></td>
+          </tr>
+
+          <tr>
+
+            <td>Dr. something2</td>
+            <td><i> 6 days left</i></td>
+            <td><i class="fa fa-close w3-text-red w3-large"></i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+<br>
+<a href="{% url 'demo' %}"><button class="w3-button w3-dark-grey"> <i class="fa fa-arrow-left"></i> Done </button></a>
+
+
+ </body>
+ </html>

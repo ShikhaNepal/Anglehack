@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Emergency call </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{% url 'main' %}">
+<link rel="stylesheet" href="{% url 'font' %}">
+<link rel="stylesheet" href="{% url 'second' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	</style>
+</head>
+<body class="w3-light-grey">
+<!-- Top container -->
+<div class="w3-bar w3-black w3-large" style="z-index: -1">
+  <span class="w3-bar-item w3-right">Dr. Tech</span>
+
+</div>
+<!-- Sidebar/menu -->
+  <div class="w3-container w3-row" style="z-index:4">
+    <div class="w3-col s4">
+    <img src="http:127.0.0.1/angel/profilepic.jpg" class="w3-round" alt="profilepic" style="width:55px">
+    </div>
+       <div class="w3-col s8 w3-bar">
+   	<p>Hi, <strong>Angel-Nepal</strong>, this is your emergency section. The following are the list of hospitals you've visited in. And contact details of us. Stay Safe.</p>
+   	</div>
+  </div>
+
+  <div class="w3-container w3-border w3-row" >
+        <h5> Doctor Schedule </h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <th> Hopspitals </th>
+            <th>Phone Number</th>
+            <th>Location</th>
+          </tr>
+            <tr>
+            <td> Model Hospital </td>
+            <td><i> 015xxxxxx</i></td>
+            <td> Hattisar, Kathmandu</td>
+          </tr>
+          <tr>
+            <td> Gandaki Hospital</td>
+            <td><i> 015xxxxxx </i></td>
+            <td> Maharajgunj, Kathmandu </td>
+          </tr>
+
+          <tr>
+
+            <td>Singer hospital</td>
+            <td><i> 015xxxxxx </i></td>
+            <td> Ratnapark, Kathmandu  </td>
+          </tr>
+          <tr>
+
+            <td>Health Care hospital</td>
+            <td><i>015xxxxxx</i></td>
+            <td>Baneshwor, Kathmandu </td>
+          </tr>
+
+          <tr>
+            <td>Health Care hospital</td>
+            <td><i>015xxxxxx</i></td>
+            <td>Patan, Lalitpur </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="w3-container w3-border w3-row" >
+        <h5> Contact Us </h5>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <th>Phone Number</th>
+            <th>Location</th>
+          </tr>
+            <tr>
+            <td><i> 015xxxxxx</i></td>
+            <td> Hattisar, Kathmandu</td>
+          </tr>
+          <tr>
+            <td><i> 015xxxxxx </i></td>
+            <td> Maharajgunj, Kathmandu </td>
+          </tr>
+
+          <tr>
+            <td><i> 015xxxxxx </i></td>
+            <td> Ratnapark, Kathmandu  </td>
+          </tr>
+          <tr>
+            <td><i>015xxxxxx</i></td>
+            <td>Baneshwor, Kathmandu </td>
+          </tr>
+
+          <tr>
+            <td><i>015xxxxxx</i></td>
+            <td>Patan, Lalitpur </td>
+          </tr>
+        </table>
+      </div>
+<br>
+<a href="{% url 'demo' %}"><button class="w3-button w3-dark-grey"> <i class="fa fa-arrow-left"></i> Done </button></a>
+
+</body>
+</html>
